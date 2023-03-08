@@ -17,9 +17,9 @@ services: #Esta etiqueta es usada para definir los contenedores que instalaremos
     expose:
       - 27017 #Expone los puertos sin publicarlos al host.
 
-  app-tutorials:
-    image: rubenespada/microservicios-diu22-23:Tutorials
-    container_name: tutorialsapp
+  app-persons:
+    image: rubenespada/microservicio_agenda:v2
+    container_name: personsapp
     networks:
       mired2:
         ipv4_address: 182.28.0.12
